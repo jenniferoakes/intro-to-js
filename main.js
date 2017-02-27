@@ -8,6 +8,12 @@
    If there are no test failures, you will see a message like this:
                  No errors! Congratulations!
  *************************************************************** */
+let firstName = 'Jennifer';
+let lastName = 'Oakes';
+const birthYear = 1991;
+let currentYear = 2017;
+let middleName;
+let age = currentYear - birthYear;
 
 
  // TODO 1:
@@ -22,7 +28,10 @@
  //     your `birthYear` and the `currentYear`
  //     (NOTE: DO NOT simply assign a number to the `age` variable, use an expression!)
 
-
+let greeting = "Hello there _____!";
+greeting = "Hello there " + firstName + "!";
+let decades = birthYear - 1900;
+decades = (((birthYear - 1900) - ((birthYear - 1900) % 10))/10);
 
  // TODO 2:
  // (a) Create a `greeting` variable as a string which says:  "Hello there _____!"
@@ -33,6 +42,21 @@
  //     NOTE: This variable SHOULD NOT have any decimal places!
  //     NOTE: You MUST USE an expression for this, it may have more than one operation!
 
+let style;
+
+if (age > 35) {
+}
+
+if (age < 35) {
+}
+
+let instructorIsAwesome = true;
+let review = 'good';
+if ( instructorIsAwesome === true) {
+  review = 'good';
+} else {
+  review = 'bad';
+}
 
 
  // TODO 3:
@@ -47,7 +71,26 @@
  //         depending on the value of `instructorIsAwesome`
  //     NOTE: You MUST use code to determine which value to assign to `review`!
 
+function math(firstNumber, secondNumber, operation) {
 
+  if (operation === 'add') {
+    return (firstNumber + secondNumber);
+  }
+
+  if (operation === 'subtract') {
+    return (firstNumber - secondNumber);
+  }
+
+  if (operation === 'multiply') {
+    return (firstNumber * secondNumber);
+  }
+
+  if (operation === 'divide') {
+    return (firstNumber / secondNumber);
+  }
+
+  return NaN;
+}
 
  // TODO 4:
  // (a) Create a function called `math` which accepts three arguments: two numbers
