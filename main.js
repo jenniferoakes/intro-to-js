@@ -45,9 +45,11 @@ decades = (((birthYear - 1900) - ((birthYear - 1900) % 10))/10);
 let style;
 
 if (age > 35) {
+  style = 'classic';
 }
 
 if (age < 35) {
+  style = 'hip';
 }
 
 let instructorIsAwesome = true;
@@ -57,7 +59,6 @@ if ( instructorIsAwesome === true) {
 } else {
   review = 'bad';
 }
-
 
  // TODO 3:
  // (a) Declare a new variable called `style`, but do not instantiate it immediately.
@@ -104,7 +105,26 @@ function math(firstNumber, secondNumber, operation) {
  // (c) If the `math` function is NOT called with one of the operations in (b)
  //     then it should return the value for something that is Not a Number
 
+function madlib(word1, word2, word3, word4) {
 
+  if (! word1) {
+    word1 = "bananas";
+  }
+
+  if (! word2) {
+    word2 = "bananas";
+  }
+
+  if (! word3) {
+    word3 = "bananas";
+  }
+
+  if (! word4) {
+    word4 = "bananas";
+  }
+
+  return "I prefer " + word1 + " while I " + word2 + " so that I don't " + word3 + " on the " + word4 + ".";
+}
 
 
  // TODO 5:
